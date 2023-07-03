@@ -1,48 +1,85 @@
 /* Write your CSS here */
-.bg-container {
-  background-color: #ffffffff;
-  background-size: cover;
-  height: 100vh;
+.app-container {
   display: flex;
-  font-family: 'Roboto';
   justify-content: center;
+  min-height: 100vh;
 }
 
-.container {
-  width: 90%;
-  margin-top: 3%;
+.responsive-container {
+  width: 80%;
+  max-width: 550px;
 }
 
-.top-container {
+@media screen and (min-width: 768px) {
+  .responsive-container {
+    max-width: 1140px;
+  }
+}
+
+.header-container {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-image: url('https://res.cloudinary.com/do4qwwms8/image/upload/v1626263091/Money%20Manager/money-manager-header_rxlcrn.png');
   background-size: cover;
   height: 172px;
-  width: 100%;
   border-radius: 16px;
-
-  padding-left: 4%;
+  margin-top: 64px;
 }
-.top-span {
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    align-items: flex-start;
+    padding: 48px;
+  }
+}
+
+.heading {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 30px;
+  }
+}
+
+.header-content {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 14px;
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-content {
+    font-size: 18px;
+  }
+}
+
+.money-manager-text {
   color: #0b69ff;
-}
-.top-pera {
-  color: #475569;
-  font-weight: 450;
-}
-.top-heading {
-  color: #475569;
-  margin-top: 3%;
+  font-weight: 500;
 }
 
-.buttom-container {
+.transaction-details {
   display: flex;
-  flex-direction: row;
-  margin-top: 2%;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .transaction-details {
+    flex-direction: row;
+  }
 }
 
 .transaction-form {
@@ -51,19 +88,24 @@
   justify-content: space-around;
   align-items: flex-start;
   height: 424px;
-
+  width: 100%;
   border: 1px solid #cbd5e1;
   border-radius: 12px;
   padding-top: 24px;
   padding-right: 24px;
   padding-left: 24px;
   padding-bottom: 32px;
-  width: 40%;
-  padding-right: 43px;
-  padding-left: 48px;
 }
 
-.heading-input {
+@media screen and (min-width: 768px) {
+  .transaction-form {
+    width: 40%;
+    padding-right: 43px;
+    padding-left: 48px;
+  }
+}
+
+.transaction-header {
   color: #475569;
   font-family: 'Roboto';
   font-size: 16px;
@@ -71,7 +113,13 @@
   line-height: 1.6;
 }
 
-.pera-input {
+@media screen and (min-width: 768px) {
+  .transaction-header {
+    font-size: 20px;
+  }
+}
+
+.input-label {
   color: #7e858e;
   font-family: 'Roboto';
   font-weight: 500;
@@ -111,9 +159,40 @@
   cursor: pointer;
   margin-bottom: 10px;
 }
+
+.history-transactions {
+  width: 100%;
+  min-height: 326px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 24px;
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .history-transactions {
+    width: 55%;
+    min-height: 424px;
+    padding-top: 24px;
+    padding-left: 28px;
+    padding-right: 41px;
+    padding-bottom: 40px;
+    margin-top: 0px;
+    margin-left: 32px;
+  }
+}
+
 .transactions-table-container {
   height: 100%;
   border-radius: 8px;
+}
+
+.transactions-table {
+  padding-left: 0;
+  margin: 0px;
 }
 
 .table-header {
@@ -123,39 +202,28 @@
   height: 48px;
   list-style-type: none;
   border: 1px solid #cbd5e1;
-  padding-left: 15px;
+  padding-left: 10px;
   padding-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .table-header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .table-header-cell {
   color: #334155;
   font-family: 'Roboto';
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
   width: 30%;
   border-right: none;
 }
 
-.transactions-table {
-  padding-left: 0;
-  margin: 0px;
-}
-
-.history-transactions {
-  width: 58%;
-  min-height: 326px;
-  border: 1px solid #cbd5e1;
-  border-radius: 12px;
-  padding-left: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 24px;
-}
-
-.transaction-header {
-  color: #475569;
-  font-family: 'Roboto';
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.6;
+@media screen and (min-width: 768px) {
+  .table-header-cell {
+    font-size: 16px;
+  }
 }

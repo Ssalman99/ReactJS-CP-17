@@ -9,11 +9,25 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+
+@media screen and (min-width: 768px) {
+  .table-row {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 .transaction-text {
   color: #475569;
   font-family: 'Roboto';
-  font-size: 14px;
+  font-size: 12px;
   width: 30%;
+}
+
+@media screen and (min-width: 768px) {
+  .transaction-text {
+    font-size: 14px;
+  }
 }
 
 .delete-container {
@@ -35,4 +49,10 @@
   align-self: center;
   border: none;
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .delete-img {
+    margin-right: 24px;
+  }
 }

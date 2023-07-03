@@ -1,0 +1,63 @@
+/* Write your CSS here */
+.money-details {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 20%;
+}
+
+.balance-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #ecfccb;
+  border: solid 1px #84cc16;
+  border-radius: 15px;
+  margin-right: 2%;
+  padding: 20px;
+  width: 35%;
+}
+
+.money-icon {
+  width: 20%;
+}
+
+.showing-rupees {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.head-pera {
+  color: #334155;
+  font-size: 15px;
+}
+.pera-amount {
+  color: #475569;
+  font-size: 28px;
+  margin-top: 5px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.income-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #cffafe;
+  border: solid 1px #06b6d4;
+  border-radius: 15px;
+  margin-right: 1%;
+  padding: 20px;
+  width: 35%;
+}
+
+.expenses-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #ede9fe;
+  border: solid 1px #7c3aed;
+  border-radius: 15px;
+
+  padding: 20px;
+  width: 35%;
+}
